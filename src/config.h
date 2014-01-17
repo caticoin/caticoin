@@ -1,0 +1,35 @@
+//config.h
+#ifndef _CONFIG_H_
+#define _CONFIG_H_ 1
+
+#define STR_HELPER(x) #x
+#define STR(x) STR_HELPER(x)
+
+#define RPCPORT 11714
+#define RPCPORTSTR STR(RPCPORT)
+#define P2PPORT 92014
+#define P2PPORTSTR STR(P2PPORT)
+#define P2PPORT_TESTNET 91714
+#define P2PPORTSTR_TESTNET STR(P2PPORT_TESTNET)
+#define HELPPORTSTR "Listen for connections on <port> (default:" STR(P2PPORT) "or testnet:" STR(P2PPORT_TESTNET)")"
+#define HELPRPCSTR "Listen for JSON-RPC connections on <port> (default:" STR(RPC11714)")"
+
+
+#define EPOCTIME 1389936028
+#define EPOCTIME_TESTNET 1389895462
+#define PSZTIMESTAMP "A Referendum for Catalonia"
+#define HASHMERKELROOT "0x96d0a8b150ebb8aafb11df1d8b7135bfbb5ab041575becb539ec30f88d6409cf"
+#define NNONCE 390353871
+#define NNONCE_TESTNET 388998944
+#define HASHGENESISBLOCK "0xe7102148ef1b4201f0f4011e949104be4b55ed1dfd675118badb06737ac10b72"
+#define HASHGENESISBLOCK_TESTNET "0xe8f9683cd14fddc6c1c15be6089437041fea62b5a6b3ecf9a7a7c4a9db314299"
+
+#define REWARD 1000
+#define NTARGETTIMESPAN 1
+#define NTARGETSPACING 15
+
+#define GLOBAL_MAX_MONEY 42007680
+#define BLOCKXDAY 5760
+
+#define DEFINE_PUBKEY_ADDRESS 11
+#endif
