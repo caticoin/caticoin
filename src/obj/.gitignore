@@ -1,2 +1,4 @@
-*
+*.o
+*.p
+*.P
 !.gitignore
